@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Detector Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: auto;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .radio-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .radio-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        
+        .radio-button:hover {
+            background-color: #4dd0e1;
+            transform: scale(1.05);
+        }
+        
+        .radio-button img {
+            border-radius: 20px;
+            margin-bottom: 10px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .radio-button label {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .radio-button input[type="checkbox"] {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+        
+        .radio-button input[type="checkbox"]:checked + label {
+            color: #0c0c0c;
+        }
+        
+        .radio-button input[type="checkbox"] + label:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #00bcd4;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            transition: transform 0.3s ease;
+        }
+        
+        .radio-button input[type="checkbox"]:checked + label:before {
+            transform: scale(1.1);
+            background-color: #00bcd4;
+        }
+        
+        .radio-button input[type="checkbox"]:hover + label:before {
+            transform: scale(1.2);
+        }
+        
+        .submit {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .submit button {
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .submit button:hover {
+            background-color: #0097a7;
+        }
+        
+        .container#response {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            font-size: large;
+            font-style: bold;
+        }
+    </style>
+</head>
+<script defer src="website/js/prediction.js"></script>
+<body>
+    <h1>Select the symptoms you are experiencing</h1>
+    <div class="radio-container">
+        
+        <div class="radio-button">
+            <input class="symptoms" type="checkbox" name="option" id="itching">
+            <label for="itching">
+                <img src="website/images/itching.jpg" alt=""></label>Itching
+            
+        </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="skin_rash">
+                <label for="skin_rash">
+                    <img src="website/images/skinrash.jpg" alt="">
+                </label>Skin Rash
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="nodal_skin_eruptions">
+                <label for="nodal_skin_eruptions">
+                    <img src="website/images/nodaleruption.jpg" alt="">
+                </label>Nodal skin eruptions
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="continuous_sneezing">
+                <label for="continuous_sneezing">
+                    <img src="website/images/sneezing.jpg" alt="">
+                    </label>Continuous Sneezing
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="shivering">
+                <label for="shivering">
+                    <img src="website/images/shivering.jpg" alt="">
+                    </label>Shivering
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="chills">
+                <label for="chills">
+                    <img src="website/images/chils.jpg" alt="">
+                    </label>Chills
+               
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="joint_pain">
+                <label for="joint_pain">
+                    <img src="website/images/joint pain.jpg" alt="">
+                    </label>Joint pain
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="stomach_pain">
+                <label for="stomach_pain">
+                    <img src="website/images/stomachpain.jpg" alt=""></label>Stomach pain
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="acidity">
+                <label for="acidity">
+                    <img src="website/images/acidity.jpg" alt="">
+                </label>Acidity
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="ulcers_on_tongue">
+                <label for="ulcers_on_tongue">
+                    <img src="website/images/tongueulcer.jpg" alt="">
+                    </label>Tongue Ulcer 
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="muscle_wasting">
+                <label for="muscle_wasting">
+                    <img src="website/images/muscle wasting.jpg" alt="">
+                   </label>Muscle Wasting
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="vomitting">
+                <label for="vomitting">
+                    <img src="website/images/vomit.jpg" alt="">
+                    </label>Vomitting
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="burning_micturition">
+                <label for="burning_micturition">
+                    <img src="website/images/burningmicturition.jpg" alt=""></label>Burning micturition
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="spotting_urination">
+                <label for="spotting_urination">
+                    <img src="website/images/urinespotting.jpg" alt="">
+                    </label>Spotting urination
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="fatigue">
+                <label for="fatigue">
+                    <img src="website/images/fatigue.jpg" alt="">
+                    </label>Fatigue
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="weight_gain">
+                <label for="weight_gain">
+                    <img src="website/images/weightgain.jpg" alt="">
+                   </label> Weight gain
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="anxiety">
+                <label for="anxiety">
+                    <img src="website/images/anxiety.jpg" alt="">
+                    </label>Anxiety
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cold_hands_and_feets">
+                <label for="cold_hands_and_feets">
+                    <img src="website/images/coldhands.jpg" alt="">
+                    </label>Cold hands and feets
+                
+            </div>
+            <!-- <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cold_hands_and_feets">
+                <label for="option2">Swollen lymph nodes</label>
+            </div> -->
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="mood_swings">
+                <label for="mood_swings">
+                    <img src="website/images/moodswings.jpg" alt="">
+                    </label>Mood Swings
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="weight_loss">
+                <label for="weight_loss">
+                    <img src="website/images/weightloss.jpg" alt="">
+                    </label>Weight loss
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="restlessness">
+                <label for="restlessness">
+                    <img src="website/images/restlessness.jpg" alt="">
+                    </label>Restlessness
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="lethargy">
+                <label for="lethargy">
+                    <img src="website/images/lethargy.jpg" alt="">
+                    </label>Lethargy
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="patches_in_throat">
+                <label for="patches_in_throat">
+                    <img src="website/images/throatpatch.jpg" alt="">
+                    </label>Patches in throat
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="irregular_sugar_level">
+                <label for="irregular_sugar_level">
+                    <img src="website/images/irregularsugar.jpg" alt="">
+                    </label>Irregular sugar level
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cough">
+                <label for="cough">
+                    <img src="website/images/cough.jpg" alt="">
+                    </label>Cough
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="high_fever">
+                <label for="high_fever">
+                    <img src="website/images/high fever.jpg" alt="">
+                   </label>High Fever
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="sunken_eyes">
+                <label for="sunken_eyes">
+                    <img src="website/images/sunkeneyes.jpg" alt="">
+                    </label>Sunken eyes
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="breathlessness">
+                <label for="breathlessness">
+                    <img src="website/images/breathlessness.jpg" alt="">
+                    </label>Breathlessness
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="sweating">
+                <label for="sweating">
+                    <img src="website/images/sweating.jpg" alt="">
+                </label>Sweating
+               
+            </div>
+            
+            
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="dehydration">
+                <label for="dehydration">
+                    <img src="website/images/dehydration.jpg" alt="">
+                </label>Dehydration
+            </div>
+            <!-- <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="indigestion">
+                <label for="option2">Indigestion</label>
+            </div> -->
+        </div>
+        <div class="submit">
+            <button type="submit" id="send-btn">
+                Submit
+            </button>
+        </div>
+        <div class="container" id="response">
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Detector Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        
+        .radio-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .radio-button {
+            display: inline-block;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .radio-button:hover {
+            background-color: #f9f9f9;
+        }
+
+        .gradient-background {
+    background: linear-gradient(300deg, #00bfff, #674cff, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+    </style>
+</head>
+<script defer src="/RVhackathon/website/js/prediction.js"></script>
+<body class="gradient-background">
+    <div class="container">
+        <h1>Select the symptoms you are experiencing </h1>
+        <div class="radio-container">
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="itching">
+                <label for="option1">Itching </label>
+                
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="skin_rash">
+                <label for="option2">Skin rash</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="nodal_skin_eruptions">
+                <label for="option2">Nodal skin eruptions</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="continuous_sneezing">
+                <label for="option2">Continuous Sneezing</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="shivering">
+                <label for="option2">Shivering</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="chills">
+                <label for="option2">Chills</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="joint_pain">
+                <label for="option2">Joint pain</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="stomach_pain">
+                <label for="option2">Stomach pain</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="acidity">
+                <label for="option2">acidity</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="ulcers_on_tongue">
+                <label for="option2">Tongue Ulcer </label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="muscle_wasting">
+                <label for="option2">Muscle Wasting</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="vomitting">
+                <label for="option2">Vomitting</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="burning_micturition">
+                <label for="option2">Burning micturition</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="spotting_urination">
+                <label for="option2">Spotting urination</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="fatigue">
+                <label for="option2">Fatigue</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="weight_gain">
+                <label for="option2">Weight gain</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="anxiety">
+                <label for="option2">Anxiety</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cold_hands_and_feets">
+                <label for="option2">Cold hands and feets</label>
+            </div>
+            <!-- <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cold_hands_and_feets">
+                <label for="option2">Swollen lymph nodes</label>
+            </div> -->
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="mood_swings">
+                <label for="option2">Mood Swings</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="weight_loss">
+                <label for="option2">Weight loss</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="restlessness">
+                <label for="option2">Restlessness</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="lethargy">
+                <label for="option2">Lethargy</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="patches_in_throat">
+                <label for="option2">Patches in throat</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="irregular_sugar_level">
+                <label for="option2">Irregular sugar level</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="cough">
+                <label for="option2">Cough</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="high_fever">
+                <label for="option2">High Fever</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="sunken_eyes">
+                <label for="option2">Sunken eyes</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="breathlessness">
+                <label for="option2">breathlessness</label>
+            </div>
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="sweating">
+                <label for="option2">Sweating</label>
+            </div>
+            
+            
+            <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="dehydration">
+                <label for="option30">Dehydration</label>
+            </div>
+            <!-- <div class="radio-button">
+                <input class="symptoms" type="checkbox" name="option" id="indigestion">
+                <label for="option2">Indigestion</label>
+            </div> -->
+        </div>
+        <div class="submit">
+            <button type="submit" id="send-btn">
+                Submit
+            </button>
+        </div>
+        <div class="container" id="response">
+
+        </div>
+    </div>
+</body>
+</html>

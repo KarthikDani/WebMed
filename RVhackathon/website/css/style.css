@@ -1,0 +1,204 @@
+#scrolling-div{
+  border-radius: 20px;
+  margin: auto;
+margin-top: 130px;
+border: 1px solid black;
+background-color: white;
+
+
+}
+
+body{
+background-color:rgb(155, 225, 244)  ;
+}
+
+.chats{
+  display: flex;
+  background-color: aquamarine;
+
+}
+.chatsmine{
+  background-color: red;
+
+}
+
+.nav-link{
+color: white !important;
+}
+
+
+.hero .flex-container .cleft h1{
+margin-left: 205px;
+margin-top: 100px;
+}
+.hero .flex-container .cleft p{
+margin-left: 150px;
+}
+.hero .flex-container .cright .box{
+              
+  height: fit-content;
+  width: fit-content;
+  margin-right: 200px;
+}
+.hero .flex-container .cright .face{
+  position: absolute;
+  top: 0;
+  left: 500px;
+  right: 0;
+  bottom: 150px;
+  margin: auto;
+  height: 40px;
+  width: 60px;
+  background:black;
+  border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.hero .flex-container .cright  .head{
+  position: absolute;
+  top: 0;
+  left: 500px;
+  right: 0;
+  bottom: 150px;
+  margin: auto;
+  height: 75px;
+  width: 100px;
+  background:white;
+  z-index: -1;
+  border-top-left-radius: 60px;
+   border-top-right-radius: 60px;
+    border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+}
+.hero .flex-container .cright .bodyr {
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  top: 60px;
+  left: 500px;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+  height: 120px;
+  width: 115px;
+  background:white;
+  z-index: -1;
+  border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+    border-bottom-left-radius: 100px;
+     border-bottom-right-radius: 100px;
+}
+.hero .flex-container .cright  #icon{
+  margin-top: 20px;
+  margin-left: 20;
+  margin-right: 20;
+  margin-bottom: 20;
+}
+.hero .flex-container .cright  .left{
+  position: absolute;
+  top: 0;
+  left: 500px;
+  right: 230px;
+  bottom: 25px;
+  margin: auto;
+  height: 30px;
+  width: 100px;
+  background:white;
+  border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+    border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 10px;
+     animation: hand 1s linear infinite;
+}
+.hero .flex-container .cright  .right{
+  position: absolute;
+  top: 50px;
+  left: 665px;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 30px;
+  width: 100px;
+  background:white;
+  border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 50px;
+  transform: rotateZ(90deg);
+}
+.hero .flex-container .cright  .eye1{
+  position: absolute;
+  top: 0;
+  left: 500px;
+  right: 25px;
+  bottom: 150px;
+  margin: auto;
+  background: repeating-linear-gradient(blue 70%, green 80%,blue);
+  height: 10px;
+  width: 15px;
+  border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+.hero .flex-container .cright  .eye2{
+  position: absolute;
+  top: 0;
+  left:525px;
+  right: 0;
+  bottom: 150px;
+  margin: auto;
+  background: repeating-linear-gradient(blue 70%, green 80%,blue);
+  height: 10px;
+  width: 15px;
+  border-top-left-radius: 50px;
+   border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+}
+
+
+
+@keyframes hand{
+  0%{
+      transform: translateY(-40px) rotateZ(45deg);
+
+  }
+  50%{
+      transform: translateY(0px) rotateZ(-0deg);
+      
+  }
+  100%{
+      transform: translateY(-40px) rotateZ(45deg);
+      
+  }
+}
+
+
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#heading{
+  margin-top: 10px;
+ text-align: center;
+ color: bisque;
+  
+}
+
+.input{
+  display: flex;
+  justify-content: center;
+}

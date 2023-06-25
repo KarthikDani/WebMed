@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    background-color: white;
+}
+.boots{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.row{
+    
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 1em;
+    text-align: center;
+}
+.column{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    
+    padding: 0.5em 0;
+    
+}
+h1{
+    text-align: center;
+    width: 100%;
+    font-size: 3.5em;
+    color: blue;
+}
+.card{
+    box-shadow: 0 0 0.5em rgba(25,0,58,0.15);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: blue;
+    cursor: pointer;
+    background: linear-gradient(rgb(94, 180, 180),white);
+}
+.card .img-container{
+width: 8em;
+height: 8em;
+
+padding: 0.5em;
+border-radius: 50%;
+margin: 0 auto 2em auto;
+
+}
+.card img{
+border-radius: 50%;
+width: 100%;
+}
+.card h3{
+    font-weight: 500;
+
+}
+.card p{
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 1px;
+}
+.icons{
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.card a{
+    text-decoration: none;
+    color:inherit;
+}
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="boots">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">Cardio Related Diseases</h3>
+              <h6 class="card-subtitle mb-2 text-muted">Go to Cardilogist</h6>
+              <p class="card-text">Cardiac arrest,heart attack, heart pain,stroke,peripheral arterial disease come under this.</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">Head and neck related diseases</h3>
+              <h6 class="card-subtitle mb-2 text-muted">Go to ENT specialist</h6>
+              <p class="card-text">Dizziness,head and neck related cancer,Chronic ear disease,nasal infection etc.. comes under this area.</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">Gynaecology</h3>
+              <h6 class="card-subtitle mb-2 text-muted">Go to gynaecologist</h6>
+              <p class="card-text">Women specific diseases or problems and treatments like PCOD/PCOS, menstrual problems, mood swings etc..come under this.</p>
+              
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h3 class="card-title">Dermatology</h3>
+              <h6 class="card-subtitle mb-2 text-muted">Go to a Dermatologist</h6>
+              <p class="card-text">Diseases of skin, hair, nails etc..like skin allergy,fungal infection, hairfall and such problems come under this.</p>
+              
+            </div>
+          </div>
+        </div>
+        <center><h1 style="font-weight: bold;">Some of the Most Experienced Doctors</h1></center>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../doctorImages/doctor1.jpg" />
+                    </div>
+                    <h3>Dr. Giridhar Kaje</h3>
+                    <p>Heart specialist</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fa-solid fa-phone fa-shake" style="font-size: xx-large;"></i>
+                            9449568846
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="font-size: xx-large;"></i>
+                            ABC Hospital,Kanyana,Puttur
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock" style="font-size: xx-large;"></i>
+                            9AM-7PM
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../doctorImages/orthopedic.jpg" />
+                    </div>
+                    <h3>Dr.Malati Avinashr</h3>
+                    <p>Orthopedic</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fa-solid fa-phone fa-shake" style="font-size: xx-large;"></i>
+                            7795209310
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="font-size: xx-large;"></i>
+                            Appolo Hospital, Jaynagar,Bangalore
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock" style="font-size: xx-large;"></i>
+                            7AM-9PM
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../doctorImages/gynaecologist.jpg" />
+                    </div>
+                    <h3>Dr.Mahalasa Bhat</h3>
+                    <p>Gynaecologist</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fa-solid fa-phone fa-shake" style="font-size: xx-large;"></i>
+                            6365432980
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="font-size: xx-large;"></i>
+                            Sarasvathi hospital, Savdatti,Hubli
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock" style="font-size: xx-large;"></i>
+                            8AM-10PM
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../doctorImages/dermadoctor.jpg" />
+                    </div>
+                    <h3>Dr.NN Madhyastha</h3>
+                    <p>Dermatologist</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fa-solid fa-phone fa-shake" style="font-size: xx-large;"></i>
+                            7786541234
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="font-size: xx-large;"></i>
+                            Nandini Nursing home,Haladi,Kundapura
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock" style="font-size: xx-large;"></i>
+                            9AM-11PM
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <div class="img-container">
+                        <img src="../doctorImages/ent.jpg" />
+                    </div>
+                    <h3>DR.Sadanand Pai</h3>
+                    <p>ENT Specialist</p>
+                    <div class="icons">
+                        <a href="#">
+                            <i class="fa-solid fa-phone fa-shake" style="font-size: xx-large;"></i>
+                            8765432190
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-location-dot" style="font-size: xx-large;"></i>
+                            Adarsh hospital,Udupi,Karnataka
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-clock" style="font-size: xx-large;"></i>
+                            10AM-6PM
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,145 @@
+{
+    "intension": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "Hello There"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Glad i could help you", "Anytime!", "My pleasure :)"]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "do you accept credit cards",
+          "do you accept upi",
+          "do you accept phonepe",
+          "do you accept google pay",
+          "do you accept Visa or mastercard"
+  
+        ],
+        "responses": [
+          "We accept VISA, Mastercard, UPI, Phonepe and google pay",
+          "We accept most major credit cards, UPI, Phonepe and google pay"
+        ]
+      },
+      {
+        "tag": "making payments",
+        "patterns": [
+          "how do i make the donations",
+          "how do i make the payments",
+          "do you accept credit cards",
+          "do you accept upi",
+          "do you accept phonepe",
+          "do you accept google pay",
+          "do you accept Visa or mastercard"
+  
+        ],
+        "responses": [
+          "Click on the Donation button above and it will take you to our payment portal where you can make the donations"
+        ]
+      },
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?"
+        ],
+        "responses": [
+          "Sorry but we dont sell any products yet"
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison.",
+          "Why don't scientists trust atoms? Because they make up everything!",
+          "How do you organize a space party? You 'planet'!",
+          "Why don't skeletons fight each other? They don't have the guts!",
+          "What do you call a bear with no teeth? A gummy bear!",
+          "Why don't scientists trust stairs? Because they're always up to something!"
+        ]
+      },
+      {
+        "tag":"appointments",
+        "patterns":["How to make appointments","How to book appointments","How to book appointments with doctors"],
+        "responses":["Click on the Book Appointment button above and it will take you to our appointment portal where you can book appointments with doctors"]
+      },
+      {
+        "tag":"using detector",
+        "patterns":["How to use disease detector","How do i use disease detector","How to use the disease detector"],
+        "responses":["Click on the Disease Detector button above and it will take you to our disease detector portal where you can use the disease detector"]
+      },
+      {
+        "tag": "using Website",
+        "patterns": [
+          "how do I use this website",
+          "how does this website work",
+          "wanna tell me how this website works"
+        ],
+        "responses": [
+          "You can use this website to make donations for poor people in need of medicine. You can use this website to predict the disease you may have based on the symptoms that your facing ",
+          "This Website is used to make donations to the poor, and also to predict the disease you may have based on the symptoms that your facing",
+          "To predict the disease you may have based on the symptoms that your facing, you can click on the predict disease button and enter the symptoms that your facing. To make donations to the poor, you can click on the donate button and enter the amount you want to donate."
+        ]
+      },
+      {
+        "tag":"praise",
+        "patterns":[
+          "nice joke",
+          "nice work",
+          "damn"
+        ]
+        ,"responses":[
+          "Thanks",
+          "Thanks a lot",
+          "Thanks a lot, I appreciate it"
+        ]
+      }
+      ,
+      {
+        "tag":"about website",
+        "patterns":[
+          "what is this website about",
+          "what is this website for",
+          "what is this website"
+        ],
+        "responses":[
+          "This Website is used to make donations to the poor, and also to predict the disease you may have based on the symptoms that your facing",
+          "Our website helps people predict the disease they may have based on the symptoms that they are facing, and also helps people make donations to the poor"
+        ]
+      }
+    ]
+  }
+  
