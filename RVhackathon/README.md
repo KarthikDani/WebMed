@@ -49,9 +49,11 @@ Stripe API
 
 
 **Team Members:**
+Karthik Dani,
 Abdul Amaan ,
 Harini N ,
-R Varsha Bantia
+R Varsha Bantia,
+Jayanth M N
 
 
 
